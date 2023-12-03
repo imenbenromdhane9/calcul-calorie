@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculateur de Besoins Caloriques</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <h1>Calculateur de Besoins Caloriques</h1>
+    <label for="age">Âge (années) :</label>
+    <input type="number" id="age"><br><br>
+    <label for="gender">Sexe :</label>
+    <select id="gender">
+      <option value="male">Homme</option>
+      <option value="female">Femme</option>
+    </select><br><br>
+    <label for="weight">Poids (kg) :</label>
+    <input type="number" id="weight"><br><br>
+    <label for="height">Taille (cm) :</label>
+    <input type="number" id="height"><br><br>
+    <label for="activity">Niveau d'activité :</label>
+    <select id="activity">
+      <option value="sedentary">Sédentaire</option>
+      <option value="light">Léger</option>
+      <option value="moderate">Modéré</option>
+      <option value="active">Actif</option>
+      <option value="veryActive">Très actif</option>
+    </select><br><br>
+    <button onclick="calculateCalories()">Calculer Besoins Caloriques</button>
+    <p id="result"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
